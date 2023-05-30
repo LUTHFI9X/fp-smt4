@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>item</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="arrow">
+    <ion-icon (click)="doWelcome()" name="chevron-back-sharp"></ion-icon>
+  </div>
+  <ion-card>
+    <img alt="onepiece" src="assets/image/onepiece.jpg" />
+    <ion-card-header>
+      <ion-card-title>BACKEND</ion-card-title>
+      <ion-button (click)="doCart()"class="cart">Add to Cart</ion-button>
+      <ion-card-subtitle>BACKEND</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis reiciendis aperiam quam. Voluptatibus eaque explicabo consectetur fugit, pariatur ratione atque vero praesentium iste. Vel labore ipsa veritatis voluptate dolore enim.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-footer>
+    <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button (click)="doWelcome()" tab="home">
+          <ion-icon name="home-outline"></ion-icon>
+          Home
+        </ion-tab-button>
+        <ion-tab-button  (click)="doSearch" tab="search">
+          <ion-icon name="search"></ion-icon>
+          Search
+        </ion-tab-button>
+        <ion-tab-button tab="receipt">
+          <ion-icon name="receipt"></ion-icon>
+          transaction
+        </ion-tab-button>
+        <ion-tab-button (click)="doCart()" tab="cart">
+          <ion-icon name="cart"></ion-icon>
+          Cart
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>
+

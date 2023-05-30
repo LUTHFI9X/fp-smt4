@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>politic</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="arrow">
+    <ion-icon  (click)="doSearch()" name="chevron-back-sharp"></ion-icon>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button (click)="doWelcome()" tab="home">
+          <ion-icon name="home-outline"></ion-icon>
+          Home
+        </ion-tab-button>
+        <ion-tab-button  tab="search">
+          <ion-icon (click)="doSearch()" name="search"></ion-icon>
+          Search
+        </ion-tab-button>
+        <ion-tab-button (click)="doTransaction()" tab="transaction">
+          <ion-icon name="receipt"></ion-icon>
+          Transaction
+        </ion-tab-button>
+        <ion-tab-button (click)="doCart()" tab="cart">
+          <ion-icon name="cart"></ion-icon>
+          Cart
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    </ion-toolbar>
+</ion-footer>
+
